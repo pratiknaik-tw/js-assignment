@@ -1,0 +1,21 @@
+:root {
+    --base-bg-color: #000; 
+    --active-bg-color:#0000FF;
+}
+
+.container{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: var(--base-bg-color);
+}
+
+.box[data-selected="ON"]{
+    background-color: var(--active-bg-color)
+}
